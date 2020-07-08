@@ -1,0 +1,25 @@
+header {
+  .mainHeader {
+    display: flex;
+    justify-content: space-between;
+    .mainHeader-left {
+
+    }
+    .mainHeader-right {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  .subHeader {
+    display: flex;
+    justify-content: space-between;
+    .subHeader-left {
+
+    }
+    .subHeader-right {
+
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import './assets/style/variable.scss';
+
+.NavMain-wrapper {
+  background: #2a2f4d;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 112px;
+}
+
+.main-wrapper {
+  background: #ffffff;
+  border-top-left-radius: 24px;
+  margin-left: 80px;
+  z-index: 11;
+  display: grid;
+  align-content: space-evenly;
+  grid-template-columns: 360px auto;
+}
