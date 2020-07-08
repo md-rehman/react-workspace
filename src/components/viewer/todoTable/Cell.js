@@ -17,7 +17,12 @@ export function PeopleCell({ props }) {
 
   return (
     <div className="PeopleCell">
-      <div className="people-icon" title={props.value}><FaRegUserCircle /></div>
+      {
+        props.rowI ?
+        <div className="people-icon" title={props.value}><FaRegUserCircle /></div>
+        :
+        props.value
+      }
     </div>
   );
 }
