@@ -1,10 +1,9 @@
 import React, { useContext } from 'react';
 import './Header.scss';
-import { MdPrint, MdFileDownload } from "react-icons/md";
 import { MainContext } from '../../../store/context/MainContext';
 import { AppContext } from '../../../store/context/AppContext';
 import { FaRegUserCircle, FaPlug, FaRobot, FaEllipsisH, FaRegListAlt, FaEyeSlash } from "react-icons/fa";
-import { BsStar, BsPeople, BsThreeDots, BsChevronCompactDown, BsFilter } from "react-icons/bs";
+import { BsStar, BsPeople, BsChevronCompactDown, BsFilter } from "react-icons/bs";
 
 
 function Header() {

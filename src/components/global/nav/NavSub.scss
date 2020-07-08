@@ -2,35 +2,58 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 32px;
+  font-size: 24px;
   color: #161947;
   height: 100vh;
-
-
+  
   background: #fff;
-  border-right: 1px solid grey;
+  border-right: 2px solid grey;
   border-top-left-radius: 24px;
-
+  
   .top-icons, .bottom-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .logo {
-      font-size: 56px;
-      padding: 8px;
+  }
+  
+  .top-section {
+    .header {
+      padding: 16px 32px;
+      font-weight: bold;
     }
-    .icon {
-      padding: 8px;
-      margin: 8px 0;
+    .filter {
+      display: flex;
+      justify-content: stretch;
+      font-size: 16px;
+      margin: 0 16px;
+      padding: 4px 8px;
+      font-size: 20px;
+      input {
+        border: none;
+        width: 100%;
+      }
     }
-    .text {
-      margin: 8px 0;
-      text-align: center;
+    .group-header {
+      font-size: 16px;
+      font-weight: bold;
+      .item {
+        padding: 8px 32px;
+        margin: 16px 0;
+
+        &:hover {
+          cursor: pointer;
+          background: grey;
+        }
+      }
     }
-    .avatar {
-      margin: 8px 0;
-      font-size: 56px;
-      
+  }
+
+  .bottom-section {
+    .wide-title {
+      border-top: 2px solid grey;
+      border-bottom: 2px solid grey;
+      padding: 16px 32px;
+      font-weight: bold;
     }
   }
 }

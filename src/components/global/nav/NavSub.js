@@ -20,7 +20,7 @@ function NavSub() {
           Workspace
         </div>
         <div className="filter">
-          <MdSearch />
+          <MdSearch /> <input type="text" className="filter-input" placeholder="Filter boards..."/>
         </div>
         <div className="group-header">
           { groupTemplate() }

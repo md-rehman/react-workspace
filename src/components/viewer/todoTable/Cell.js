@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import './Cell.scss';
-import { FaEnvelope, FaMobileAlt, FaMapMarkerAlt, FaLinkedinIn, FaGithub, FaCodepen, FaCode } from "react-icons/fa";
+import { FaRegUserCircle } from "react-icons/fa";
 
 
 export function MainHeaderCell({ props }) {
@@ -17,16 +17,42 @@ export function PeopleCell({ props }) {
 
   return (
     <div className="PeopleCell">
-      { props.value }
+      <div className="people-icon" title={props.value}><FaRegUserCircle /></div>
     </div>
   );
 }
 
-export function StatusCell({ props }) {
 
+
+export function StatusCell({props}) {
+  const currentState = parseInt(props.value)
+  const { rowI } = props
+
+  const statusCellStyle = [
+    {
+      name: 'Working on it',
+      color: '#febf6f',
+    },
+    {
+      name: 'Critical',
+      color: '#a25ddc',
+    },
+    {
+      name: 'Stuck',
+      color: '#e2445b',
+    },
+    {
+      name: 'Done',
+      color: '#01c875',
+    },
+    {
+      name: '',
+      color: '#c4c4c4',
+    },
+  ]
   return (
     <div className="StatusCell">
-      { props.value }
+      { rowI ? statusCellStyle[props.value].name : props.value}
     </div>
   );
 }
